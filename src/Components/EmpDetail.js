@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import DateOfBirthInput from "./DateOfBirthInput";
 
 const EmpDetail = () => {
   const { empid } = useParams();
@@ -33,6 +32,7 @@ const EmpDetail = () => {
                 The Employee name is : {empdata.fullname} ({empdata.id}){" "}
               </h1>
               <h3>Contact Details</h3>
+              <h5> Profile Pic : {empdata.imageUrl} </h5>
               <h5>Email is : {empdata.email} </h5>
               <h5>Phone is : {empdata.phone} </h5>
               <h5>Employee position is : {empdata.position} </h5>

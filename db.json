@@ -8,7 +8,8 @@
       "position": "stuff",
       "bio": "i'm a happy person",
       "empnumber": "mb58753",
-      "dob": "2023-01-18"
+      "dob": "2023-01-18",
+      "imageUrl": ""
     },
     {
       "fullname": "Tlhogi Tlhoks",
@@ -19,7 +20,8 @@
       "empnumber": "mb57462",
       "dob": "2020-11-14",
       "active": true,
-      "id": 1
+      "id": 1,
+      "imageUrl": ""
     },
     {
       "id": 4,

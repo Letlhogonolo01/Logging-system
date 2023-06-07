@@ -1,9 +1,27 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
+// import avator1 from "../Assets/images/avator1.jpg";
+
 const EmpListing = () => {
   const [empdata, empdatachange] = useState(null);
   const navigate = useNavigate();
+
+  // const [items, setItems] = useState([]);
+
+  // useEffect(() => {
+  //   fetch("http://localhost:8000/employee/items")
+  //     .then((response) => response.json())
+  //     .then((data) => setItems(data));
+  // }, []);
+
+  // const [images, setImages] = useState([]);
+
+  // useEffect(() => {
+  //   fetch("http://localhost:8000/employee/imageUrl")
+  //     .then((response) => response.json())
+  //     .then((data) => setImages(data));
+  // }, []);
 
   const LoadDetail = (id) => {
     navigate("/employee/detail/" + id);
@@ -54,7 +72,7 @@ const EmpListing = () => {
             <thead className="bg-dark text-white">
               <tr>
                 <td>ID</td>
-                {/* <td>Profile Picture</td> */}
+                <td>Profile Picture</td>
                 <td>Full Name</td>
                 <td>Email</td>
                 <td>Phone</td>
@@ -67,6 +85,7 @@ const EmpListing = () => {
                 empdata.map((item) => (
                   <tr key={item.id}>
                     <td>{item.id}</td>
+                    <img src={item.imageUrl} alt="My Img" />
                     <td>{item.fullname}</td>
                     <td>{item.email}</td>
                     <td>{item.phone}</td>
