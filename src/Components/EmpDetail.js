@@ -38,7 +38,7 @@ const EmpDetail = () => {
               <h5>Employee position is : {empdata.position} </h5>
               <h5>About my Bio : {empdata.bio} </h5>
               <h5>Employee number is : {empdata.empnumber} </h5>
-              <h5><DateOfBirthInput /></h5>
+              <h5>Date of Birth is : {empdata.dob} </h5>
               <Link to="/" className="btn btn-danger">
                 Back to Listing
               </Link>
@@ -51,3 +51,5 @@ const EmpDetail = () => {
 };
 
 export default EmpDetail;
+
+{/* <DateOfBirthInput /> */}

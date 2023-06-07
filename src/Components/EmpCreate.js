@@ -1,4 +1,5 @@
 import { useState } from "react";
+import axios from 'axios';
 import { Link, useNavigate } from "react-router-dom";
 
 const EmpCreate = () => {
@@ -9,7 +10,7 @@ const EmpCreate = () => {
   const [position, positionchange] = useState("");
   const [bio, biochange] = useState("");
   const [empnumber, empnumberchange] = useState("");
-  const [dob, dobchange] = useState("");
+  const [dob, setDob] = useState("");
   const [active, activechange] = useState(true);
   const [validation, valchange] = useState(true);
   const navigate = useNavigate();
@@ -31,6 +32,38 @@ const EmpCreate = () => {
         console.log(err.message);
       });
   };
+
+  // const [dob, setDob] = useState('');
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const empdata = {dob};
+    fetch("http://localhost:8000/employee", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(empdata),
+    })
+    // Make a POST request to the JSON server to save the date of birth
+    try {
+      await axios.post("http://localhost:8000/employee", { dob });
+      console.log('Date of birth saved successfully');
+    } catch (error) {
+      console.error('Error saving date of birth', error);
+    }
+  };
+
+  // return (
+  //   <form onSubmit={handleSubmit}>
+  //     <label>Date of Birth:</label>
+  //     <input
+  //       type="date"
+  //       value={dob}
+  //       onChange={(e) => setDob(e.target.value)}
+  //     />
+  //     <button type="submit">Save</button>
+  //   </form>
+  // );
 
   return (
     <div>
@@ -131,7 +164,8 @@ const EmpCreate = () => {
                         <input
                           type="date"
                           value={dob}
-                          onChange={(e) => dobchange(dob)}
+                          // onChange={(e) => dobchange(e.target.dob)}
+                          onChange={(e) => setDob(e.target.value)}
                           className="form-control"
                         ></input>
                       </div>

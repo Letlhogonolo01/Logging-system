@@ -5,7 +5,9 @@ import EmpListing from "./Components/EmpListing";
 import EmpCreate from "./Components/EmpCreate";
 import EmpDetail from "./Components/EmpDetail";
 import EmpEdit from "./Components/EmpEdit";
-import DateOfBirthInput from "./Components/DateOfBirthInput";
+
+// import Images from "./Components/Images";
+// import DateOfBirthInput from "./Components/DateOfBirthInput";
 
 function App() {
   return (
@@ -20,6 +22,11 @@ function App() {
           <Route path="/employee/edit/:empid" element={<EmpEdit />} />
         </Routes>
       </BrowserRouter>
+      {/* <DateOfBirthInput /> */}
+      {/* <Images /> */}
+
+     
+
     </div>
   );
 }

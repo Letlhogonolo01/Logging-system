@@ -54,6 +54,7 @@ const EmpListing = () => {
             <thead className="bg-dark text-white">
               <tr>
                 <td>ID</td>
+                {/* <td>Profile Picture</td> */}
                 <td>Full Name</td>
                 <td>Email</td>
                 <td>Phone</td>

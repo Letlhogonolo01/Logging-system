@@ -1,43 +1,35 @@
 {
   "employee": [
     {
-      "id": 1,
-      "fullname": "Tlhogi Lucky",
-      "email": "hello@gmail.com",
-      "phone": "0123456789",
-      "position": "learner",
-      "bio": "I'm a humble person with a fun personality",
-      "empnumber": "ml91735",
-      "dob": []
-    },
-    {
       "id": 2,
-      "fullname": "Zack Legand",
-      "email": "zak@mlab.co.za",
-      "phone": "0684522990",
-      "position": "facilitator",
-      "bio": "I love to code and willing to learn about tech",
-      "empnumber": "mb673873"
+      "fullname": "Tom tommy",
+      "email": "tt@t.co.za",
+      "phone": "098765432",
+      "position": "stuff",
+      "bio": "i'm a happy person",
+      "empnumber": "mb58753",
+      "dob": "2023-01-18"
     },
     {
-      "id": 3,
-      "fullname": "Adam Makhanda",
-      "email": "ad@woza.co.za",
-      "phone": "0123456789",
-      "position": "Security guard",
-      "bio": "I enjoy my own space but also love to interacting",
-      "empnumber": "mb635781"
-    },
-    {
-      "fullname": "Mike Mo",
-      "email": "mm@gmail.com ",
-      "phone": "0987654367",
+      "fullname": "Tlhogi Tlhoks",
+      "email": "tt@mail.co.za",
+      "phone": "0786644123",
       "position": "learner",
-      "bio": "Love to read and a bubbly person",
-      "empnumber": "mb436862",
-      "dob": "",
+      "bio": "great person in general",
+      "empnumber": "mb57462",
+      "dob": "2020-11-14",
       "active": true,
-      "id": 4
+      "id": 1
+    },
+    {
+      "id": 4,
+      "fullname": "jnbcd",
+      "email": "gwerh",
+      "phone": "6458799993",
+      "position": "dhbfdjnd",
+      "bio": "jndytkuylyr",
+      "empnumber": "48569nm",
+      "dob": "2023-06-09"
     }
   ]
 }

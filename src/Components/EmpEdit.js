@@ -12,6 +12,7 @@ const EmpEdit = () => {
   const [position, positionchange] = useState("");
   const [bio, biochange] = useState("");
   const [empnumber, empnumberchange] = useState("");
+  const [dob, setDob] = useState("");
   const [active, activechange] = useState(true);
   const [validation, valchange] = useState(true);
   const navigate = useNavigate();
@@ -29,6 +30,7 @@ const EmpEdit = () => {
         positionchange(resp.position);
         biochange(resp.bio);
         empnumberchange(resp.empnumber);
+        setDob(resp.dob);
         activechange(resp.isactive);
       })
       .catch((err) => {
@@ -38,7 +40,7 @@ const EmpEdit = () => {
 
   const handlesubmit = (e) => {
     e.preventDefault();
-    const empdata = { id, fullname, email, phone, position, bio, empnumber, active };
+    const empdata = { id, fullname, email, phone, position, bio, empnumber, dob,  active };
 
     fetch("http://localhost:8000/employee/" + empid, {
       method: "PUT",
@@ -85,7 +87,7 @@ const EmpEdit = () => {
                           onChange={(e) => namechange(e.target.value)}
                           className="form-control"
                         ></input>
-                        {fullname.length == 0 && validation && (
+                        {fullname.length === 0 && validation && (
                           <span className="text-danger">Enter your name</span>
                         )}
                       </div>
@@ -141,6 +143,19 @@ const EmpEdit = () => {
                         <input
                           value={empnumber}
                           onChange={(e) => empnumberchange(e.target.value)}
+                          className="form-control"
+                        ></input>
+                      </div>
+                    </div>
+
+                    <div className="col-lg-12">
+                      <div className="form-group">
+                        <label>Date Of Birth</label>
+                        <input
+                          type="date"
+                          value={dob}
+                          // onChange={(e) => dobchange(e.target.dob)}
+                          onChange={(e) => setDob(e.target.value)}
                           className="form-control"
                         ></input>
                       </div>
