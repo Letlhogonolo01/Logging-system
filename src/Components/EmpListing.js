@@ -68,8 +68,8 @@ const EmpListing = () => {
                     <td>{item.id}</td>
                     <td>{item.fullname}</td>
                     <td>{item.email}</td>
-                    <td>{item.position}</td>
                     <td>{item.phone}</td>
+                    <td>{item.position}</td>
                     <td>
                       <a
                         onClick={() => LoadEdit(item.id)}

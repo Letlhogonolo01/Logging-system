@@ -6,13 +6,17 @@ const EmpCreate = () => {
   const [fullname, namechange] = useState("");
   const [email, emailchange] = useState("");
   const [phone, phonechange] = useState("");
+  const [position, positionchange] = useState("");
+  const [bio, biochange] = useState("");
+  const [empnumber, empnumberchange] = useState("");
+  const [dob, dobchange] = useState("");
   const [active, activechange] = useState(true);
   const [validation, valchange] = useState(true);
   const navigate = useNavigate();
 
   const handlesubmit = (e) => {
     e.preventDefault();
-    const empdata = { fullname, email, phone, active };
+    const empdata = { fullname, email, phone, position, bio, empnumber, dob, active };
 
     fetch("http://localhost:8000/employee", {
       method: "POST",
@@ -60,7 +64,7 @@ const EmpCreate = () => {
                           className="form-control"
                         ></input>
                         {fullname.length == 0 && validation && (
-                          <span className="text-danger">Enter your name</span>
+                          <span className="text-danger">Enter your full name</span>
                         )}
                       </div>
                     </div>
@@ -82,6 +86,52 @@ const EmpCreate = () => {
                         <input
                           value={phone}
                           onChange={(e) => phonechange(e.target.value)}
+                          className="form-control"
+                        ></input>
+                      </div>
+                    </div>
+
+                    <div className="col-lg-12">
+                      <div className="form-group">
+                        <label>Employee Position</label>
+                        <input
+                          value={position}
+                          onChange={(e) => positionchange(e.target.value)}
+                          className="form-control"
+                        ></input>
+                      </div>
+                    </div>
+
+
+                    <div className="col-lg-12">
+                      <div className="form-group">
+                        <label>My Bio</label>
+                        <input
+                          value={bio}
+                          onChange={(e) => biochange(e.target.value)}
+                          className="form-control"
+                        ></input>
+                      </div>
+                    </div>
+
+                    <div className="col-lg-12">
+                      <div className="form-group">
+                        <label>Employee Number</label>
+                        <input
+                          value={empnumber}
+                          onChange={(e) => empnumberchange(e.target.value)}
+                          className="form-control"
+                        ></input>
+                      </div>
+                    </div>
+
+                    <div className="col-lg-12">
+                      <div className="form-group">
+                        <label>Date of Birth</label>
+                        <input
+                          type="date"
+                          value={dob}
+                          onChange={(e) => dobchange(dob)}
                           className="form-control"
                         ></input>
                       </div>

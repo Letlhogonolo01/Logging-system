@@ -5,6 +5,7 @@ import EmpListing from "./Components/EmpListing";
 import EmpCreate from "./Components/EmpCreate";
 import EmpDetail from "./Components/EmpDetail";
 import EmpEdit from "./Components/EmpEdit";
+import DateOfBirthInput from "./Components/DateOfBirthInput";
 
 function App() {
   return (

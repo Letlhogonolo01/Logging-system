@@ -5,13 +5,39 @@
       "fullname": "Tlhogi Lucky",
       "email": "hello@gmail.com",
       "phone": "0123456789",
-      "position": "learner"
+      "position": "learner",
+      "bio": "I'm a humble person with a fun personality",
+      "empnumber": "ml91735",
+      "dob": []
     },
     {
       "id": 2,
-      "fullname": "Hlatse Mazaza",
-      "email": "hey@gmail.com",
-      "phone": "06891234567"
+      "fullname": "Zack Legand",
+      "email": "zak@mlab.co.za",
+      "phone": "0684522990",
+      "position": "facilitator",
+      "bio": "I love to code and willing to learn about tech",
+      "empnumber": "mb673873"
+    },
+    {
+      "id": 3,
+      "fullname": "Adam Makhanda",
+      "email": "ad@woza.co.za",
+      "phone": "0123456789",
+      "position": "Security guard",
+      "bio": "I enjoy my own space but also love to interacting",
+      "empnumber": "mb635781"
+    },
+    {
+      "fullname": "Mike Mo",
+      "email": "mm@gmail.com ",
+      "phone": "0987654367",
+      "position": "learner",
+      "bio": "Love to read and a bubbly person",
+      "empnumber": "mb436862",
+      "dob": "",
+      "active": true,
+      "id": 4
     }
   ]
 }

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import DateOfBirthInput from "./DateOfBirthInput";
 
 const EmpDetail = () => {
   const { empid } = useParams();
@@ -34,6 +35,10 @@ const EmpDetail = () => {
               <h3>Contact Details</h3>
               <h5>Email is : {empdata.email} </h5>
               <h5>Phone is : {empdata.phone} </h5>
+              <h5>Employee position is : {empdata.position} </h5>
+              <h5>About my Bio : {empdata.bio} </h5>
+              <h5>Employee number is : {empdata.empnumber} </h5>
+              <h5><DateOfBirthInput /></h5>
               <Link to="/" className="btn btn-danger">
                 Back to Listing
               </Link>
