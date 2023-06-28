@@ -24,14 +24,23 @@
       "imageUrl": ""
     },
     {
-      "id": 4,
-      "fullname": "jnbcd",
-      "email": "gwerh",
-      "phone": "6458799993",
-      "position": "dhbfdjnd",
-      "bio": "jndytkuylyr",
-      "empnumber": "48569nm",
-      "dob": "2023-06-09"
+      "id": 5,
+      "fullname": "Mazaza Pinky",
+      "email": "mazee@gmail.",
+      "phone": "0769883355",
+      "position": "learner",
+      "bio": "love listening to afro & tech music and I have a twin",
+      "empnumber": "ml1235",
+      "dob": "2023-02-06"
+    }
+  ],
+  "user": [
+    {
+      "id": "tester",
+      "name": "John Willie",
+      "email": "john@gmail.com",
+      "password": "1q2w",
+      "gender": "male"
     }
   ]
 }

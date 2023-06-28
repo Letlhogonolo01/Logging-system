@@ -58,6 +58,7 @@ const EmpListing = () => {
   }, []);
   return (
     <div className="container">
+      <h1>MLab Logging System</h1>
       <div className="card">
         <div className="card-title">
           <h2>Employee Listing</h2>
